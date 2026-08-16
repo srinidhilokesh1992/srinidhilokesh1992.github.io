@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getInitialTheme, saveTheme, type Theme } from "../lib/theme";
 import { Header } from "../components/Header";
+import { Reveal } from "../components/Reveal";
 
 function renderAuthors(authors: string, isDark: boolean) {
   const highlightClass = isDark
@@ -255,7 +256,7 @@ export default function PublicationsPage() {
 
           <div className="space-y-16">
             {sortedYears.map((year) => (
-              <div key={year}>
+              <Reveal key={year}>
                 <h2 className={`mb-6 border-b pb-4 text-2xl font-medium tracking-[-0.04em] ${isDark ? "border-white/10 text-white" : "border-[#171411]/10 text-[#171411]"}`}>
                   {year}
                 </h2>
@@ -291,7 +292,7 @@ export default function PublicationsPage() {
                     </article>
                   ))}
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
 

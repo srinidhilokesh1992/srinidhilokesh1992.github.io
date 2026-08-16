@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getInitialTheme, saveTheme, type Theme } from "../lib/theme";
 import { BookIcon, FilterIcon, FlaskIcon, LayersIcon } from "../lib/icons";
 import { Header } from "../components/Header";
+import { Reveal } from "../components/Reveal";
 
 const teachingAreas = [
   {
@@ -113,7 +114,7 @@ export default function TeachingPage() {
       <Header theme={theme} onToggleTheme={() => setTheme(isDark ? "light" : "dark")} />
 
       <main className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6 md:pt-14">
-        <section className="pb-20">
+        <Reveal className="pb-20">
           <div className="mb-12">
             <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Teaching</p>
             <h1 className={`mt-3 text-4xl font-medium tracking-[-0.06em] md:text-5xl ${headingText}`}>Teaching grounded in environmental engineering, analytical chemistry, and water systems research.</h1>
@@ -133,9 +134,9 @@ export default function TeachingPage() {
               </article>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section className="pb-20">
+        <Reveal className="pb-20">
           <div className="mb-10">
             <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Teaching Experience</p>
             <h2 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Courses taught, instructional roles, and curriculum development.</h2>
@@ -157,9 +158,9 @@ export default function TeachingPage() {
               </article>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section className="pb-20">
+        <Reveal className="pb-20">
           <div className={`${glassPanelClass} rounded-[2rem] p-8`}>
             <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
               <div>
@@ -185,7 +186,7 @@ export default function TeachingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
       </main>
 
       <footer className={`border-t py-8 ${isDark ? "border-white/10 bg-[#0d1116]/80 text-white/60" : "border-[#171411]/10 bg-[#f7f2ec]/90 text-[#171411]/65"}`}>

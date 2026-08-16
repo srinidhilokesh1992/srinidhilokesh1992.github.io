@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getInitialTheme, saveTheme, type Theme } from "./lib/theme";
 import { AwardIcon, DropletIcon, FlaskIcon, ParticleIcon, WaveformIcon } from "./lib/icons";
 import { Header } from "./components/Header";
+import { Reveal } from "./components/Reveal";
 
 const stats = [
   { label: "Publications", value: "15" },
@@ -87,7 +88,7 @@ export default function Home() {
       <Header theme={theme} onToggleTheme={() => setTheme(isDark ? "light" : "dark")} />
 
       <main id="home" className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6 md:pt-14">
-        <section className="relative overflow-hidden pb-20">
+        <Reveal className="relative overflow-hidden pb-20">
           <div className={`absolute inset-x-12 top-8 -z-10 h-72 rounded-[3rem] blur-3xl ${isDark ? "bg-[radial-gradient(circle_at_center,_rgba(29,47,62,0.12),_transparent_65%)]" : "bg-[radial-gradient(circle_at_center,_rgba(129,143,156,0.14),_transparent_65%)]"}`} />
 
           <div className="grid items-center gap-10 md:grid-cols-[1.08fr_0.92fr] md:gap-12 lg:gap-16">
@@ -146,9 +147,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section id="about" className="py-20">
+        <Reveal id="about" className="py-20">
           <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:gap-12">
             <div>
               <p className={`mb-3 text-[11px] uppercase tracking-[0.28em] ${softText}`}>About</p>
@@ -166,9 +167,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section id="services" className="pb-20">
+        <Reveal id="services" className="pb-20">
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
               <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Research areas</p>
@@ -187,9 +188,9 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section id="teaching" className="pb-20">
+        <Reveal id="teaching" className="pb-20">
           <div className="mb-10 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Teaching</p>
@@ -234,9 +235,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section id="research-thrust" className="pb-20">
+        <Reveal id="research-thrust" className="pb-20">
           <div className="mb-10">
             <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Research Thrust</p>
             <h3 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Selected work and research themes.</h3>
@@ -254,9 +255,9 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section className="pb-20">
+        <Reveal className="pb-20">
           <div className={`${glassPanelClass} rounded-[2rem] p-8 shadow-[0_18px_40px_rgba(0,0,0,0.03)]`}>
             <div className="mb-8">
               <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Work Experience</p>
@@ -273,9 +274,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section id="honors" className="pb-20">
+        <Reveal id="honors" className="pb-20">
           <div className="mb-10">
             <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Honors & Awards</p>
             <h3 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Recognition from research, teaching, and professional service.</h3>
@@ -295,9 +296,9 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
+        </Reveal>
 
-        <section className="pb-20">
+        <Reveal className="pb-20">
           <div className={`rounded-[2rem] p-8 shadow-[0_18px_40px_rgba(0,0,0,0.03)] ${isDark ? "bg-white/5 border border-white/10" : "bg-[#171411]/5 border border-[#171411]/10"}`}>
             <div className="mb-6 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
               <div>
@@ -336,9 +337,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        <section id="contact" className="pb-10">
+        <Reveal id="contact" className="pb-10">
           <div className={`rounded-[2rem] p-8 shadow-[0_32px_80px_rgba(0,0,0,0.22)] ring-1 backdrop-blur-md ${isDark ? "bg-[linear-gradient(135deg,rgba(15,18,22,0.96),rgba(28,35,42,0.94))] text-[#f6f1ea] ring-white/10" : "bg-[linear-gradient(135deg,rgba(238,243,247,0.96),rgba(255,255,255,0.95))] text-[#171411] ring-[#171411]/10"}`}>
             <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
               <div>
@@ -362,7 +363,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
       </main>
 
       <footer className={`border-t py-8 ${footerClass}`}>
