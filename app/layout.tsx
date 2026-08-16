@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { SmoothScroll } from "./components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: {
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className="h-full antialiased"
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }
