@@ -41,7 +41,16 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
   return (
     <header className={`sticky top-0 z-50 border-b backdrop-blur-xl ${headerClass}`}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-3">
+        <Link
+          href="/"
+          className="flex items-center gap-3"
+          onClick={(e) => {
+            if (isHome) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           <div className={`flex h-10 w-10 items-center justify-center rounded-full text-[10px] font-semibold tracking-[0.22em] ${isDark ? "bg-[#ecf1f6] text-[#11161d]" : "bg-[#171411] text-[#f6f1ea]"}`}>
             SL
           </div>
