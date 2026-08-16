@@ -111,10 +111,10 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
-                <a href="#research-thrust" className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white hover:shadow-[0_20px_40px_rgba(223,234,240,0.18)]" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420] hover:shadow-[0_20px_40px_rgba(23,20,17,0.12)]"}`}>
+                <a href="#research-thrust" className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white hover:shadow-[0_20px_40px_rgba(223,234,240,0.18)]" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420] hover:shadow-[0_20px_40px_rgba(23,20,17,0.12)]"}`}>
                   View work
                 </a>
-                <a href="#contact" className={`inline-flex items-center justify-center rounded-full border px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 ${isDark ? "border-white/15 bg-white/5 text-white hover:border-white/25 hover:bg-white/10" : "border-[#171411]/15 bg-white/70 text-[#171411] hover:border-[#171411]/25 hover:bg-white"}`}>
+                <a href="#contact" className={`inline-flex items-center justify-center rounded-full border px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "border-white/15 bg-white/5 text-white hover:border-white/25 hover:bg-white/10" : "border-[#171411]/15 bg-white/70 text-[#171411] hover:border-[#171411]/25 hover:bg-white"}`}>
                   Contact
                 </a>
               </div>
@@ -198,7 +198,7 @@ export default function Home() {
             </div>
             <a
               href="/teaching"
-              className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 whitespace-nowrap ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}
+              className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 whitespace-nowrap hover:-translate-y-0.5 ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}
             >
               View Teaching
             </a>
@@ -310,7 +310,7 @@ export default function Home() {
               </div>
               <a
                 href="/publications"
-                className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 whitespace-nowrap ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}
+                className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-[11px] font-medium uppercase tracking-[0.24em] transition duration-300 whitespace-nowrap hover:-translate-y-0.5 ${isDark ? "bg-[#dfeaf0] text-[#11161d] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}
               >
                 View All Publications
               </a>
@@ -348,16 +348,16 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <a href="mailto:slokesh@unr.edu" className={`rounded-full px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition ${isDark ? "bg-[#f6f1ea] text-[#171411] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}>
+                <a href="mailto:slokesh@unr.edu" className={`rounded-full px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "bg-[#f6f1ea] text-[#171411] hover:bg-white" : "bg-[#171411] text-[#f6f1ea] hover:bg-[#2a2420]"}`}>
                   Email me
                 </a>
-                <a href="https://scholar.google.com/citations?user=RKNBZc0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
+                <a href="https://scholar.google.com/citations?user=RKNBZc0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
                   Google Scholar
                 </a>
-                <a href="https://orcid.org/0009-0001-1537-4166" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
+                <a href="https://orcid.org/0009-0001-1537-4166" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
                   ORCID
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className={`rounded-full border px-5 py-2.5 text-[11px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-0.5 ${isDark ? "border-white/15 text-white hover:bg-white/5" : "border-[#171411]/15 text-[#171411] hover:bg-[#171411]/5"}`}>
                   LinkedIn
                 </a>
               </div>
