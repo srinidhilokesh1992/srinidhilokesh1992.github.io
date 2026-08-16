@@ -63,6 +63,7 @@ const workExperience = [
   { period: "2025 - Present", title: "Research Scientist", detail: "Investigating leaching behavior of DBP precursors from wildland-urban interface fire residues and their transport into water systems at University of Nevada Reno." },
   { period: "2023 - 2025", title: "Postdoctoral Scholar", detail: "Developed and optimized extraction methods for chemical analysis of emissions from burning structural materials at Colorado State University." },
   { period: "2019 - 2023", title: "PhD in Environmental Engineering", detail: "Explored redox-mediated degradation of pollutants by aqueous-phase biochar at University of Nevada Reno." },
+  { period: "2016 - 2018", title: "M.S. in Environmental Engineering", detail: "Determined the mechanisms and rates of inactivation of human viruses, bacteriophages, and bacteria in natural waters and wastewaters through experimental and modeling approaches at New York University." },
 ];
 
 export default function Home() {
