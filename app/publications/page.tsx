@@ -284,6 +284,9 @@ export default function PublicationsPage() {
                         )}
                       </h3>
                       <p className={`mb-2 text-sm ${bodyText}`}>{renderAuthors(pub.authors, isDark)}</p>
+                      {pub.authors.includes("*") && (
+                        <p className={`mb-2 text-xs italic ${isDark ? "text-white/50" : "text-[#171411]/50"}`}>* Co-first authors</p>
+                      )}
                       {pub.pages && pub.pages !== "-" && <p className={`text-sm ${isDark ? "text-white/60" : "text-[#171411]/65"}`}>pp. {pub.pages}</p>}
                     </article>
                   ))}
