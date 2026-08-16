@@ -52,7 +52,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
             <Link
               key={item.label}
               href={hrefFor(item)}
-              className={`inline-block transition duration-300 hover:-translate-y-1.5 ${isActive(item) ? headingText + " font-semibold" : ""}`}
+              className={`-mx-3 -my-2 inline-block rounded-full px-3 py-2 transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_14px_28px_rgba(0,0,0,0.12)] ${isDark ? "hover:bg-white/10" : "hover:bg-[#171411]/5"} ${isActive(item) ? headingText + " font-semibold" : ""}`}
             >
               {item.label}
             </Link>
