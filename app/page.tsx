@@ -265,7 +265,7 @@ export default function Home() {
               <h3 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Research and practice built for real-world complexity.</h3>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {workExperience.map((item) => (
                 <div key={item.title} className={`${glassCardClass} rounded-[1.5rem] p-5`}>
                   <div className={`mb-3 text-[10px] uppercase tracking-[0.22em] ${isDark ? "text-white/55" : "text-[#171411]/55"}`}>{item.period}</div>
