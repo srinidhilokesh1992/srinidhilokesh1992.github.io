@@ -7,8 +7,8 @@ import { Header } from "../components/Header";
 
 function renderAuthors(authors: string, isDark: boolean) {
   const highlightClass = isDark
-    ? "font-semibold text-white bg-white/15 rounded px-1"
-    : "font-semibold text-[#171411] bg-[#171411]/10 rounded px-1";
+    ? "font-semibold text-[#11161d] bg-[#dfeaf0] rounded px-1.5 py-0.5"
+    : "font-semibold text-[#f6f1ea] bg-[#171411] rounded px-1.5 py-0.5";
 
   return authors.split(/(\*?Lokesh,?\s*S\.?)/g).map((part, index) =>
     part.includes("Lokesh") ? (
