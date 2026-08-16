@@ -20,10 +20,9 @@ const navConfig: NavItem[] = [
 type HeaderProps = {
   theme: Theme;
   onToggleTheme: () => void;
-  eyebrow?: string;
 };
 
-export function Header({ theme, onToggleTheme, eyebrow = "Research" }: HeaderProps) {
+export function Header({ theme, onToggleTheme }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -45,10 +44,7 @@ export function Header({ theme, onToggleTheme, eyebrow = "Research" }: HeaderPro
           <div className={`flex h-10 w-10 items-center justify-center rounded-full text-[10px] font-semibold tracking-[0.22em] ${isDark ? "bg-[#ecf1f6] text-[#11161d]" : "bg-[#171411] text-[#f6f1ea]"}`}>
             SL
           </div>
-          <div>
-            <div className={`text-[10px] uppercase tracking-[0.26em] ${isDark ? "text-white/55" : "text-[#171411]/55"}`}>{eyebrow}</div>
-            <div className={`text-base font-medium tracking-[-0.04em] ${headingText}`}>Dr. Sri</div>
-          </div>
+          <div className={`text-base font-medium tracking-[-0.04em] ${headingText}`}>Dr. Sri</div>
         </Link>
 
         <nav className={`hidden items-center gap-8 text-[10px] font-medium uppercase tracking-[0.22em] md:flex ${navTextClass}`}>

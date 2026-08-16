@@ -241,7 +241,7 @@ export default function PublicationsPage() {
 
   return (
     <div className={`min-h-screen ${shellClass}`}>
-      <Header theme={theme} onToggleTheme={() => setTheme(isDark ? "light" : "dark")} eyebrow="Research" />
+      <Header theme={theme} onToggleTheme={() => setTheme(isDark ? "light" : "dark")} />
 
       <main className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6 md:pt-14">
         <section className="pb-20">
