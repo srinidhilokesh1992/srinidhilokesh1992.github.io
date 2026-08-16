@@ -52,7 +52,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
             <Link
               key={item.label}
               href={hrefFor(item)}
-              className={`inline-block transition duration-300 hover:-translate-y-0.5 ${isActive(item) ? headingText + " font-semibold" : ""}`}
+              className={`inline-block transition duration-300 hover:-translate-y-1.5 ${isActive(item) ? headingText + " font-semibold" : ""}`}
             >
               {item.label}
             </Link>
@@ -63,20 +63,20 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
           <button
             type="button"
             onClick={onToggleTheme}
-            className={`inline-flex items-center justify-center rounded-full border px-3 py-2 text-[9px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] ${iconButtonClass}`}
+            className={`inline-flex items-center justify-center rounded-full border px-3 py-2 text-[9px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] ${iconButtonClass}`}
           >
             {isDark ? "Light" : "Dark"}
           </button>
           <Link
             href={isHome ? "#contact" : "/#contact"}
-            className={`inline-flex items-center justify-center rounded-full px-5 py-2.5 text-[10px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.14)] ${contactButtonClass}`}
+            className={`inline-flex items-center justify-center rounded-full px-5 py-2.5 text-[10px] font-medium uppercase tracking-[0.22em] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.14)] ${contactButtonClass}`}
           >
             Contact
           </Link>
           <a
             href="/CV.pdf"
             download
-            className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-[9px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] ${iconButtonClass}`}
+            className={`inline-flex items-center justify-center rounded-full border px-4 py-2 text-[9px] font-medium uppercase tracking-[0.2em] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.1)] ${iconButtonClass}`}
           >
             Download CV
           </a>
