@@ -5,10 +5,14 @@ import { useEffect, useState } from "react";
 import { getInitialTheme, saveTheme, type Theme } from "../lib/theme";
 import { Header } from "../components/Header";
 
-function renderAuthors(authors: string) {
+function renderAuthors(authors: string, isDark: boolean) {
+  const highlightClass = isDark
+    ? "font-semibold text-white bg-white/15 rounded px-1"
+    : "font-semibold text-[#171411] bg-[#171411]/10 rounded px-1";
+
   return authors.split(/(\*?Lokesh,?\s*S\.?)/g).map((part, index) =>
     part.includes("Lokesh") ? (
-      <strong key={index} className="font-semibold">
+      <strong key={index} className={highlightClass}>
         {part}
       </strong>
     ) : (
@@ -279,7 +283,7 @@ export default function PublicationsPage() {
                           pub.title
                         )}
                       </h3>
-                      <p className={`mb-2 text-sm ${bodyText}`}>{renderAuthors(pub.authors)}</p>
+                      <p className={`mb-2 text-sm ${bodyText}`}>{renderAuthors(pub.authors, isDark)}</p>
                       {pub.pages && pub.pages !== "-" && <p className={`text-sm ${isDark ? "text-white/60" : "text-[#171411]/65"}`}>pp. {pub.pages}</p>}
                     </article>
                   ))}
