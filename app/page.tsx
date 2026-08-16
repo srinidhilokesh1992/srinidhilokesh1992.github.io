@@ -245,7 +245,7 @@ export default function Home() {
         <Reveal id="research-thrust" className="pb-20">
           <div className="mb-10">
             <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Research Thrust</p>
-            <h3 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Selected work and research themes.</h3>
+            <h3 className={`mt-3 text-3xl font-medium tracking-[-0.06em] md:text-4xl ${headingText}`}>Research themes.</h3>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
