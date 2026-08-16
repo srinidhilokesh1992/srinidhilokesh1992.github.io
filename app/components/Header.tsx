@@ -47,7 +47,7 @@ export function Header({ theme, onToggleTheme, eyebrow = "Research" }: HeaderPro
           </div>
           <div>
             <div className={`text-[10px] uppercase tracking-[0.26em] ${isDark ? "text-white/55" : "text-[#171411]/55"}`}>{eyebrow}</div>
-            <div className={`text-base font-medium tracking-[-0.04em] ${headingText}`}>Dr. Srinidhi Lokesh</div>
+            <div className={`text-base font-medium tracking-[-0.04em] ${headingText}`}>Dr. Sri</div>
           </div>
         </Link>
 
