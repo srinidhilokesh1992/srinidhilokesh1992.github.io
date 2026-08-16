@@ -8,9 +8,9 @@ import { Header } from "./components/Header";
 import { Reveal } from "./components/Reveal";
 
 const stats = [
-  { label: "Publications", value: "15" },
-  { label: "Years active", value: "10+" },
-  { label: "Funding secured", value: "$2.73M" },
+  { label: "Publications", value: "15", href: "/publications" },
+  { label: "Years active", value: "10+", href: "#work-experience" },
+  { label: "Funding secured", value: "$2.73M", href: "/grants" },
 ];
 
 const services = [
@@ -122,10 +122,14 @@ export default function Home() {
 
               <dl className="grid max-w-xl grid-cols-3 gap-3 pt-2">
                 {stats.map((stat) => (
-                  <div key={stat.label} className={`${glassCardClass} rounded-[1.35rem] p-4`}>
+                  <a
+                    key={stat.label}
+                    href={stat.href}
+                    className={`${glassCardClass} block rounded-[1.35rem] p-4 transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_14px_28px_rgba(0,0,0,0.1)]`}
+                  >
                     <dt className={`text-[10px] uppercase tracking-[0.2em] ${isDark ? "text-white/55" : "text-[#171411]/55"}`}>{stat.label}</dt>
                     <dd className={`mt-3 text-2xl font-medium tracking-[-0.06em] ${headingText}`}>{stat.value}</dd>
-                  </div>
+                  </a>
                 ))}
               </dl>
             </div>
@@ -258,7 +262,7 @@ export default function Home() {
           </div>
         </Reveal>
 
-        <Reveal className="pb-20">
+        <Reveal id="work-experience" className="pb-20">
           <div className={`${glassPanelClass} rounded-[2rem] p-8 shadow-[0_18px_40px_rgba(0,0,0,0.03)]`}>
             <div className="mb-8">
               <p className={`text-[11px] uppercase tracking-[0.28em] ${softText}`}>Work Experience</p>

@@ -14,6 +14,7 @@ const navConfig: NavItem[] = [
   { label: "Research areas", anchor: "services" },
   { label: "Teaching", href: "/teaching" },
   { label: "Publications", href: "/publications" },
+  { label: "Grants", href: "/grants" },
   { label: "Contact", anchor: "contact" },
 ];
 
